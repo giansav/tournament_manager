@@ -1,4 +1,4 @@
-{"ElencoAtleti":[{
+[{
 	"N":1,
 	"Società": "Shikado",
 	"Cognome":"Savino",
@@ -124,4 +124,3 @@
 	"DisciplinaGara":"KICK JITSU",
 	"MatchSostenuti":2
 }]
-}

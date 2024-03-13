@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!---- esempio di tabella costruita importando dati da un file json-->
+<!---- è necessario creare un server locale con Live Server-->
 <html>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -33,29 +35,18 @@
     </tbody>
 </table>
 
-<script>
-	var myArray = []
+<script type="module">
+	import data from "http://localhost:5500/dataset1.json" assert { type: "json" }
+	var myArray = data
 	
-
-	$.ajax({
-		method:'GET',
-        url:'./dataset1.json',
-		dataType: "json",
-        success:function(response){
-			myArray = response.data
-			buildTable(myArray)
-			console.log(myArray)
-		}
-	})
-
-
+	buildTable(myArray)
 
 	function buildTable(data){
 		var table = document.getElementById('myTable')
 
 		for (var i = 0; i < data.length; i++){
 			var row = `<tr>
-                <td>${data[i].N}</td>
+							<td>${data[i].N}</td>
 							<td>${data[i].Società}</td>
 							<td>${data[i].Cognome}</td>
                             <td>${data[i].Nome}</td>
