@@ -1,0 +1,151 @@
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<style>
+    th{ 
+        color:#fff;
+            }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+</style>
+
+<body style="margin:200;padding:0">
+<form name="forms" id="forms">
+    <div class="form-row align-items-center">
+        <div class="form-group col-md-4">
+            <label for="Input_Societa">Società</label>
+            <input type="text" class="form-control" id="Input_Societa" name="Società" required>
+        </div>
+        <div class="form-group col-md-4">
+            <label for="Input_Nome">Nome</label>
+            <input type="text" class="form-control" id="Input_Nome" name="Nome" required>
+        </div>
+        <div class="form-group col-md-4">
+            <label for="Input_Cognome">Cognome</label>
+            <input type="text" class="form-control" id="Input_Cognome" name="Cognome" required>
+        </div>
+    </div>
+
+    <div class="form-row align-items-center">
+        <div class="form-group col-md-1">
+            <label for="Input_Sesso">Sesso</label>
+            <select class="form-control" id="Input_Sesso" name="Sesso" required>
+                <option>M</option>
+                <option>F</option>
+            </select>
+        </div>
+        <div class="form-group col-md-2">
+            <label for="Input_Nascita">Data di nascita</label>
+            <input type="date" class="form-control" id="Input_Nascita" name="Data di nascita" required> <!--CAMBIARE IN SOLO ANNO-->
+        </div>
+        <div class="form-group col-md-2">
+            <label for="Input_Divisione">Divisione</label>
+            <select class="form-control" id="Input_Divisione" name="Divisione" required>
+                <option>Novices</option>
+                <option>Younger Cadets</option>
+                <option>Older Cadets</option>
+                <option>Younger Juniores</option>
+                <option>Older Juniores</option>
+                <option>Seniores</option>
+                <option>Master</option>
+            </select>
+        </div>
+        <div class="form-group col-md-1">
+            <label for="Input_Peso">Peso</label>
+            <select class="form-control" id="Input_Peso" name="Peso" required>
+                <option>-28</option>
+                <option>-32</option>
+                <option>-37</option>
+                <option>-42</option>
+                <option>-47</option>
+                <option>-52</option>
+                <option>-57</option>
+                <option>-63</option>
+                <option>-69</option>
+                <option>-75</option>
+                <option>-81</option>
+                <option>-91</option>
+                <option>+91</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-row align-items-center">
+        <div class="form-group col-md-3">
+            <label for="Input_Ente">Ente tesseramento</label>
+            <select class="form-control" id="Input_Ente" name="Ente di tesseramento" required>
+                <option>CSEN</option>
+                <option>FIJLKAM</option>
+                <option>FEDERKOMBAT</option>
+                <option>FPI</option>
+                <option>ACSI</option>
+                <option>AICS</option>
+                <option>ASI</option>
+            </select>
+        </div>
+        <div class="form-group col-md-3">
+            <label for="Input_NTesseramento">Numero tesseramento</label>
+            <input type="number" class="form-control" id="Input_NTesseramento" name="Numero tesseramento" required>
+        </div>
+    </div>
+    <div class="form-row align-items-center">
+        <div class="form-group col-md-3">
+            <label for="Input_Disciplina">Disciplina Gara</label>
+            <select class="form-control" id="Input_Disciplina" name="Disciplina" required>
+                <option>FREE BOXE</option>
+                <option>LIGHT CONTACT</option>
+                <option>KICK LIGHT
+                <option>GRAPPLING NO-GI</option>
+                <option>GRAPPLING GI</option>
+                <option>KICK JITSU</option>
+                <option>MMA LIGHT</option>
+            </select>
+        </div>
+        <div class="form-group col-md-3">
+            <label for="Input_Match">Match sostenuti</label>
+            <select class="form-control" id="Input_Match" name="Match sostenuti" required>
+                <option>da zero a 3 (ESORDIENTE)</option>
+                <option>da 4 a 10 (PRINCIPIANTE)</option>
+                <option>più di 10 (ESPERTO)</option>
+            </select>
+        </div>
+    </div>
+       
+    <button type="submit" class="btn btn-primary">Iscriviti</button>
+    
+    
+</form>
+<script type="module">
+            // prendi il form iscrizione
+            let formElement = document.querySelector('form#forms')
+            formElement.addEventListener("submit", handleSubmit)
+
+            function handleSubmit(event){
+                // converti il form in json
+                event.preventDefault();
+                let formData = new FormData(formElement);                           
+                let data = Object.fromEntries(formData); 
+                let jsonData = JSON.stringify(data);
+
+                fetch("https://jsonplaceholder.typicode.com/posts",{
+                    method: "POST",
+                    headers:{
+                        "Content-Type" : "application/json"
+                    },
+                    body: jsonData
+                }).then(res => res.json())
+                .then(result => console.log(result))
+                .catch(err => console.log(err))
+        }
+
+</script>
+</body>
