@@ -7,7 +7,7 @@
 
 body {
     min-height: 100vh;
-    background: url('img/blue_bg.jpg') no-repeat;
+    background: url('img/blue_bg.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -81,13 +81,13 @@ body {
 
 .form-login {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    align-items: center;
+    top: 33%;
+    left: 33%;
     justify-content: center;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    z-index: 2;
+    flex-direction: column;
+    width: 440px;
+    height: 480px;
+    padding: 30px;
 }
 
 .input-box {
@@ -98,29 +98,41 @@ body {
 }
 
 .input-field {
-    width: 150%;
-    height: 50px;
-    padding: 20px;
-    position: relative;
-    font-size: 15px;
-    color: rgb(25, 150, 223);
-    background: white;
-    border: none;
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 15px;
     border-radius: 30px;
+    border: none;
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0, 0.05);
     outline: none;
     transition: .3s;
 }
 
-.submit {
+.submit-btn {
     width: 100%;
-    height: 50px;
-    padding: 20px;
-    position: relative;
-    font-size: 15px;
-    color: white;
-    background: darkblue;
+    height: 60px;
+    background: #222;
     border: none;
     border-radius: 30px;
-    outline: none;
+    cursor: pointer;
     transition: .3s;
+}
+
+.input-submit{
+    position: relative;
+    top: -35px;
+    left: 17px;
+}
+
+.input-submit label{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
 }
