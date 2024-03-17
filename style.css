@@ -63,3 +63,18 @@ body {
 .navbar a:hover::before {
     width: 100%;
 }
+
+.nav-button {
+    width: 100px;
+    height: 40px;
+    position: relative;
+    margin-left: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(25, 150, 223);
+    background: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
