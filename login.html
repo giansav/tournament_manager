@@ -1,1 +1,42 @@
-<p>qui si effettua il login</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Savino & Savino">
+    <title>Tournament Manager Homepage</title>
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  
+  <body>
+
+        <header class = "header">
+          <a href ="#" class = "logo-img"><img src="img/logo_csen.png" id=logo/> </a>
+            <a href ="#" class = "logo">CSEN Napoli Est</a>
+            <nav class = "navbar">
+                <a href ="index.html">Home</a>
+                <a href ="eventi.html">Eventi</a>
+                <a href ="gare.html">Iscrizioni Gare</a>
+                <a href ="corsi.html">Iscrizioni Corsi</a>
+                <a href ="contatti.html">Contatti</a>
+                <button class="nav-button" id="login-btn" onclick='window.location = "login.html"'>Login</button>
+        </header>
+  
+        <div class="form-login">
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password" required>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Invia">
+            </div>
+        </div>
+  
+  
+    </body>
+</html>
