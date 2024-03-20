@@ -1,32 +1,153 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Savino & Savino">
-    <title>Tournament Manager Iscrizione Corsi</title>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
 
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Savino & Savino">
+<title>Tournament Manager Form Iscrizione Corsi</title>
+
+<head>
     <link rel="stylesheet" href="style.css">
+    <header class="header">
+        <a href="#" class="logo-img"><img src="img/logo_csen.png" id=logo /> </a>
+        <a href="#" class="logo">CSEN Napoli Est</a>
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="eventi.html">Eventi</a>
+          <a href="gare.html">Iscrizioni Gare</a>
+          <a href="corsi.html">Iscrizioni Corsi</a>
+          <a href="contatti.html">Contatti</a>
+          <button class="nav-button" id="login-btn" onclick='window.location = "login.html"'>Login</button>
+      </header>
+</head>
 
-  </head>
-  
-  <body>
+<body style="margin:250;padding:0">
+    <label for="forms" class="form-name">Seleziona un corso e iscriviti</label>
 
-        <header class = "header">
-          <a href ="#" class = "logo-img"><img src="img/logo_csen.png" id=logo/> </a>
-            <a href ="#" class = "logo">CSEN Napoli Est</a>
-            <nav class = "navbar">
-                <a href ="index.html">Home</a>
-                <a href ="eventi.html">Eventi</a>
-                <a href ="gare.html">Iscrizioni Gare</a>
-                <a href ="corsi.html">Iscrizioni Corsi</a>
-                <a href ="contatti.html">Contatti</a>
-                <button class="nav-button" id="login-btn" onclick='window.location = "login.html"'>Login</button>
-        </header>
-  
-        <!----qui il form per iscriversi ai corsi-->
-  
-  
-    </body>
-</html>
+    <form name="forms" id="forms">
+        <div class="form-login">
+
+            <div class="form-row align-items-center">
+                <div class="form-group col-md-12">
+                    <label class="form-label" for="Input_Gara">Seleziona il corso</label>
+                    <select class="form-control" id="Input_Gara" name="Gara" required>
+                        <option disabled selected>...</option>
+                        <option value="2012">corso 1</option>
+                        <option value="2011">corso 2</option>
+                    </select>
+                </div>
+            </div>
+                <div class="form-row align-items-center">
+                    <div class="form-group col-md-6">
+                        <label class="form-label" for="Input_Nome">Nome</label>
+                        <input type="text" class="form-control" id="Input_Nome" name="Nome" placeholder="Inserire nome"
+                            required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="form-label" for="Input_Cognome">Cognome</label>
+                        <input type="text" class="form-control" id="Input_Cognome" name="Cognome"
+                            placeholder="Inserire cognome" required>
+                    </div>
+                </div>
+
+                <div class="form-row align-items-center">
+                    <div class="form-group col-md-3">
+                        <label class="form-label" for="Input_Sesso">Sesso</label>
+                        <select class="form-control" id="Input_Sesso" name="Sesso" required>
+                            <option disabled selected>...</option>
+                            <option>M</option>
+                            <option>F</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="Input_Nascita" class="form-label">Data di Nascita</label>
+                        <input type="date" class="form-control" id="Input_Nascita" name="Data di nascita" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="form-label" for="Input_CodiceFiscale">Codice Fiscale</label>
+                        <input type="text" class="form-control" id="Input_CodiceFiscale" name="CodiceFiscale"
+                            placeholder="Inserire codice fiscale" required>
+                    </div>
+                </div>
+
+                <div class="form-row align-items-center">
+                    <div class="form-group col-md-5">
+                        <label class="form-label" for="Input_Indirizzo">Indirizzo</label>
+                        <input type="text" class="form-control" id="Input_Indirizzo" name="Indirizzo"
+                            placeholder="Inserire Indirizzo" required>
+                    </div>
+                    <div class="form-group col-md-5">
+                        <label class="form-label" for="Input_Comune">Comune</label>
+                        <input type="text" class="form-control" id="Input_Comune" name="Comune"
+                            placeholder="Inserire Comune" required>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label class="form-label" for="Input_PR">Provincia</label>
+                        <input type="text" class="form-control" id="Input_PR" name="PR" placeholder="Prov"
+                            required>
+                    </div>
+                </div>
+                <div class="form-row align-items-center">
+                    <div class="form-group col-md-6">
+                        <label class="form-label" for="Input_Email">Email</label>
+                        <input type="email" class="form-control" id="Input_Email" name="email"
+                            placeholder="Inserire email" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="form-label" for="Input_Cellulare">Numero di cellulare</label>
+                        <input type="number" class="form-control" id="Input_Cellulare" name="Cellulare"
+                            placeholder="Inserire numero di cellulare" required>
+                    </div>
+                </div>
+                <div class="form-row align-items-center">
+                    <div class="form-group col-md-6">
+                        <label class="form-label" for="Input_TitoloStudio">Titolo di Studio</label>
+                        <select class="form-control" id="Input_TitoloStudio" name="TitoloStudio" required>
+                            <option disabled selected>...</option>
+                            <option>Scuola dell'obbligo</option>
+                            <option>Qualifica di formazione professionale</option>
+                            <option>Diploma di formazione professionale</option>
+                            <option>Diploma di scuola secondaria di secondo grado</option>
+                            <option>Laurea</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="form-label" for="Input_Qualifiche">Qualifiche CONI possedute</label>
+                        <input type="text" class="form-control" id="Input_Qualifiche" name="Qualifiche"
+                            placeholder="(non obbligatorio)">
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn" id="submitBtn">Iscriviti</button>
+            </div>
+    </form>
+
+    <script>
+        $(document).ready(function () {
+            $('#submitBtn').click(function () {
+                checked = $("input[type=checkbox]:checked").length;
+
+                if (!checked) {
+                    alert("Devi selezionare almeno un corso prima di procedere.");
+                    return false;
+                }
+            });
+        });
+    </script>
+
+
+</body>

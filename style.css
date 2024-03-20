@@ -2,10 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Carlito", sans-serif;
+}
+
+th {
+    color: #fff;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
 }
 
 body {
+    margin-top: 10%;
     min-height: 100vh;
     background: url('img/blue_bg.jpg');
     background-size: cover;
@@ -23,7 +38,17 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background: rgba(0,0,0,0.5);
 }
+
+p{
+    color:#fff;
+    font-size: 15px;
+    font-family: "Carlito", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
 
 .logo-img {
     width: 100px;
@@ -34,19 +59,23 @@ body {
 }
 
 .logo {
-    font-size: 32px;
+    font-size: 40px;
     color: white;
     text-decoration: none;
-    font-weight: 700;
+    font-family: "Carlito", sans-serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
 .navbar a {
     position: relative;
     font-size: 18px;
     color: white;
-    font-weight: 500;
     text-decoration: none;
     margin-left: 40px;
+    font-family: "Carlito", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .navbar a::before {
@@ -70,25 +99,67 @@ body {
     position: relative;
     margin-left: 40px;
     font-size: 18px;
-    font-weight: 700;
     color: rgb(25, 150, 223);
     background: white;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: .3s;
+    font-family: "Carlito", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .form-login {
     position: absolute;
-    top: 33%;
-    left: 33%;
+    margin-top: 30px;
+    top: 24%;
+    left: 10%;
     justify-content: center;
     flex-direction: column;
-    width: 440px;
-    height: 480px;
+    width: 800;
+    height: auto;
     padding: 30px;
+    background: rgba(0,0,0,0.5);
 }
+
+.form-name{                        /*quando cambi gli attributi di form name cambia anche form login*/ 
+    position: absolute;         
+    top: 18%;
+    left: 10%;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    font-family: "Carlito", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.form-scelta {
+    position: absolute;
+    margin-top: 30px;
+    top: 28%;
+    right: 10%;
+    justify-content: center;
+    flex-direction: column;
+    width: 400;
+    height: auto;
+    padding: 30px;
+    background: rgba(0,0,0,0.5);
+}
+
+.form-name-scelta{                        /*quando cambi gli attributi di form name scelta cambia anche form scelta*/ 
+    position: absolute;         
+    top: 24%;
+    right: 10%;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-family: "Carlito", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
 
 .input-box {
     position: relative;
@@ -108,22 +179,35 @@ body {
     box-shadow: 0px 5px 10px 1px rgba(0,0,0, 0.05);
     outline: none;
     transition: .3s;
+    font-family: "Carlito", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .submit-btn {
+    margin-top: 5%;
     width: 100%;
     height: 60px;
-    background: #222;
+    background: rgb(25, 150, 223);
     border: none;
     border-radius: 30px;
     cursor: pointer;
+    transition: .3s;
+    font-family: "Carlito", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+
+.submit-btn:hover {
+    background: rgb(18, 112, 167);
     transition: .3s;
 }
 
 .input-submit{
     position: relative;
     top: -35px;
-    left: 17px;
+    margin-top: 70px;
 }
 
 .input-submit label{
@@ -135,4 +219,27 @@ body {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     cursor: pointer;
+}
+
+.form-label{
+    color:#fff;
+    font-family: "Carlito", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.input-checkbox{
+    color:#fff;
+    font-family: "Carlito", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    justify-content: center;
+    flex-direction: column;
+    width: 800;
+    height: auto;
+    padding: 30px;
+    color: white;
 }

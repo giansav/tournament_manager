@@ -1,43 +1,66 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Savino & Savino">
-    <title>Tournament Manager Login</title>
 
-    <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Savino & Savino">
+  <title>Tournament Manager Login</title>
 
-  </head>
-  
-  <body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
 
-        <header class = "header">
-          <a href ="#" class = "logo-img"><img src="img/logo_csen.png" id=logo/> </a>
-            <a href ="#" class = "logo">CSEN Napoli Est</a>
-            <nav class = "navbar">
-                <a href ="index.html">Home</a>
-                <a href ="eventi.html">Eventi</a>
-                <a href ="gare.html">Iscrizioni Gare</a>
-                <a href ="corsi.html">Iscrizioni Corsi</a>
-                <a href ="contatti.html">Contatti</a>
-                <button class="nav-button" id="login-btn" onclick='window.location = "login.html"'>Login</button>
-        </header>
-  
-        <div class="form-login">
-            <div class="input-box">
-                <input type="text" class="input-field" placeholder="Email" autocomplete="off" required>
-            </div>
-            <div class="input-box">
-                <input type="password" class="input-field" placeholder="Password" autocomplete="off" required>
-            </div>
-            <div class="input-submit">
-                <button class="submit-btn" id="submit"></button>
-                <label for="submit">Invia</label>
-            </div>
-        </div>
-  
-  
-    </body>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <header class="header">
+    <a href="#" class="logo-img"><img src="img/logo_csen.png" id=logo /> </a>
+    <a href="#" class="logo">CSEN Napoli Est</a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="eventi.html">Eventi</a>
+      <a href="gare.html">Iscrizioni Gare</a>
+      <a href="corsi.html">Iscrizioni Corsi</a>
+      <a href="contatti.html">Contatti</a>
+      <button class="nav-button" id="login-btn" onclick='window.location = "login.html"'>Login</button>
+  </header>
+
+
+
+</head>
+
+<body>
+
+  <label for="forms" class="form-name">Entra nel tuo account</label>
+  <div class="form-login">
+    <input type="email" class="input-field" placeholder="Email" autocomplete="off" required>
+    <input type="password" class="input-field" placeholder="Password" autocomplete="off" id="password" required>
+
+    <div class="form-check form-switch form-check-reverse">
+      <input class="form-check-input" type="checkbox" id="mostraPassword" role="switch" onclick="passwordViewToggle()">
+      <label class="input-checkbox" for="mostraPassword">Mostra Password</label>
+    </div>
+
+    <div class="input-submit">
+      <button class="submit-btn" id="submit"></button>
+      <label for="submit">Login</label>
+    </div>
+  </div>
+  <script>
+    function passwordViewToggle() {
+      var x = document.getElementById("password");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+  </script>
+
+</body>
+
 </html>
