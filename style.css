@@ -148,7 +148,7 @@ p{
     background: rgba(0,0,0,0.5);
 }
 
-.form-name-scelta{                        /*quando cambi gli attributi di form name scelta cambia anche form scelta*/ 
+.form-name-scelta{                         
     position: absolute;         
     top: 24%;
     right: 10%;
@@ -243,3 +243,77 @@ h1 {
     padding: 30px;
     color: white;
 }
+
+section {
+    width: 100%;
+    height: 100vh;
+    background: url('img/blue_bg.jpg');
+    background-size: cover;
+}
+
+section .left-box {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+section .left-box .content {
+    color: #fff;
+    background: rgba(0,0,0, 0.5);
+    padding: 40px;
+    transition: 0.3s;
+}
+
+section .left-box .content:hover {
+    background: rgb(25, 150, 223);
+}
+
+section .left-box .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+}
+
+section .left-box .content p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+section . eventi {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+    background: transparent;
+    float: left;
+    box-sizing: border-box;
+}
+
+section .eventi .time {
+    color: #fff;
+}
+
+section .eventi .time h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+}
+
+section .eventi .details h3 {
+    color: #fff;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 25px;
+}
+section .eventi .details p {
+    margin: 10px 0 0;
+    padding-right: 30px;
+    padding-bottom: 40px;
+}
+
+ul {
+    list-style-type: none;
+    }
+    
