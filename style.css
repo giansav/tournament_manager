@@ -197,6 +197,7 @@ p{
     font-weight: 400;
     font-style: normal;
     color: #fff;
+    font-size: 24px;
 }
 
 .submit-btn:hover {
@@ -316,4 +317,91 @@ section .eventi .details p {
 ul {
     list-style-type: none;
     }
-    
+
+.contatti {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+}
+
+.contatti .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contatti .content h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+}
+
+.container .info-contatti {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .info-contatti .box-contatti {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .info-contatti .box-contatti .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .info-contatti .box-contatti .text h2 {
+    font-weight: 500;
+    color: aquamarine; 
+}
+
+.contact-form {
+    margin-top: 30px;
+    width: 40%;
+    padding: 20px;
+    background: white;
+}
+
+.contact-form h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color:rgb(25, 150, 223);
+    padding-bottom: 20px;
+}
+
+.contact-form .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+
