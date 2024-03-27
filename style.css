@@ -371,7 +371,7 @@ ul {
 
 .container .info-contatti .box-contatti .text h2 {
     font-weight: 500;
-    color: aquamarine; 
+    color: aquamarine;
 }
 
 .contact-form {
@@ -386,12 +386,14 @@ ul {
     font-weight: 800;
     color:rgb(25, 150, 223);
     padding-bottom: 20px;
+    text-align: center;
 }
 
 .contact-form .input-box {
     position: relative;
-    width: 100%;
+    width: 92%;
     margin-top: 10px;
+    
 }
 
 .contact-form .input-box input,
